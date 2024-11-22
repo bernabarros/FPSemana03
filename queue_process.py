@@ -4,7 +4,10 @@ words = input()
 
 words = words.split()
 
-wordqueue = deque(words)
+wordqueue = deque()
+
+for word in words:
+    wordqueue.appendleft(word)
 
 print(wordqueue)
 
